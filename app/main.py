@@ -30,3 +30,6 @@ app.mount(
     StaticFiles(directory="app/static"),
     name="static",
 )
+
+# include routes in app
+app.include_router(main_router)
